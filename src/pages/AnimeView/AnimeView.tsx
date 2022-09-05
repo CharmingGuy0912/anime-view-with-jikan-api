@@ -7,6 +7,7 @@ import MainLayout from 'layouts/MainLayout';
 import AnimeComponent from 'components/AnimeComponent';
 import PaginationComponent from 'components/PaginationComponent';
 import styles from './AnimeView.module.scss';
+import { scrollToTop } from 'utils';
 
 const AnimeView = () => {
 	const [animeData, setAnimeData] = useState<Array<Record<any, any>>>([]);
@@ -28,11 +29,13 @@ const AnimeView = () => {
 	const handlePrevPage = () => {
 		if (currentPage === 1) return;
 		dispatch(setCurrentPage(currentPage - 1));
+		scrollToTop();
 	};
 
 	const handleNextPage = () => {
 		if (currentPage === totalPage) return;
 		dispatch(setCurrentPage(currentPage + 1));
+		scrollToTop();
 	};
 
 	return (
