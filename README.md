@@ -1,4 +1,4 @@
-# Aniew View with Jinkan API
+# Anime View with Jikan API
 
 Coinable Technical Assessment
 
