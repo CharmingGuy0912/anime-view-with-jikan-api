@@ -52,5 +52,6 @@
     "@types/react-helmet": "^6.1.5",
     "@types/react-modal": "^3.13.1",
     "lodash.debounce": "^4.0.8"
-  }
+  },
+  "homepage": "."
 }
