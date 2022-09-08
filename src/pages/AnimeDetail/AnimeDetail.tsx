@@ -27,7 +27,7 @@ const AnimeDetail = () => {
 				</div>
 				<div className='content'>
 					<div className='main-content'>
-						<img src={data.images?.jpg?.small_image_url} alt='anime' />
+						<img src={data.images?.jpg?.image_url} alt='anime' />
 						<div className='information'>
 							<span className='anime-title'>
 								{data.title}
